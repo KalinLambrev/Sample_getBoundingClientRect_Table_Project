@@ -1,0 +1,18 @@
+<div class="example-container mat-elevation-z8" id="example">
+  <div
+    class="row"
+    *ngFor="let element of sourceToDisplay"
+    style="display: flex"
+    #currentRows
+  >
+    <row-component
+      [data]="element"
+      style="display: flex"
+      (componentLoaded)="compLoaded($event)"
+    ></row-component>
+  </div>
+</div>
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
